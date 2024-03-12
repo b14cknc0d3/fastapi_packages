@@ -118,7 +118,7 @@ class JWTAuthenticator:
 
 if __name__ == '__main__':
     authenticator = JWTAuthenticator(secret_key="your-secret-key", access_token_expire_minutes=30, algorithm="HS256")
-    _user_info = {"id": 123, "email": "test@test.com", "role": "admin"}
+    _user_info = {"id": 123, "email_service": "test@test.com", "role": "admin"}
     _access_token = authenticator.create_access_token(user_info=_user_info)
     _refresh_token = authenticator.create_refresh_token(user_info=_user_info)
     print("Access Token:", _access_token)

@@ -1,8 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import Dict
 
-from fastapi import FastAPI
-
 
 class MailSender(ABC):
     @abstractmethod
