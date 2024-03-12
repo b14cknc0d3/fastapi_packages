@@ -13,7 +13,7 @@ setup(
         'auth',
         'database',
     ],
-    requires=[
+    install_requires=[
         'SQLAlchemy~=2.0.28',
         'passlib~=1.7.4',
         'python-jose~=3.3.0',
